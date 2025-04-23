@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Travel Survey</h1>
+    <p id="description">This first survey will help us match offerings that fit you!</p>
+    <form id="survey-form">
+
+      <fieldset>
+         <label for="name" id="name-label">First Name:
+           <input id="name" type="text" placeholder=" *required" required/>
+         </label>
+
+
+         <label for="email" id="email-label">Email:
+           <input id="email" type="email" placeholder=" *required" required/>
+         </label>
+
+
+          <label for="number" id="number-label">Age:
+           <input id="number" type="number" min="1" max="120" placeholder="in years"/>
+         </label>
+      </fieldset>
+      
+      
+      <fieldset>
+        <label for="dropdown">Trip vibe: <select id="dropdown" name="dropdown">
+          <option value="1"> Recreation</option>
+          <option value="2"> Mostly active</option>
+          <option value="3"> 50/50</option>
+          <option value="4"> Mostly chill</option>
+          <option value="5"> Relaxation</option>
+          </select>
+          </label>
+      </fieldset>
+
+
+      <fieldset>
+        <legend>Preferred location:</legend>
+        <label for="beach"><input id="beach" name="location" type="radio" class="inline" value="beach" checked /> Beach/Island</label>
+        <label for="mountains"><input id="mountains" name="location" type="radio" class="inline" value="mountains" /> Mountains</label>
+        <label for="desert"><input id="desert" name="location" type="radio" class="inline" value="desert" /> Desert/Rural</label>
+        <label for="city"><input id="city" name="location" type="radio" class="inline" value="city" /> City/Urban</label>
+        <label for="winter"><input id="winter" name="location" type="radio" class="inline" value="winter"/> Winter/Ski</label>
+        <label for="cruise"><input id="cruise" name="location" type="radio" class="inline" value="cruise"/> Cruise</label>
+        <label for="other"><input id="other" name="location" type="radio" class="inline" value="other"/> Other</label>
+      </fieldset>
+
+
+      <fieldset>
+        <legend>Send me more info about: </legend>
+        <label for="lodging"><input id="lodging" name="dining" type="checkbox" value="lodging"> Lodging </label>
+        <label for="dining"><input id="dining" name="dining" type="checkbox" value="dining"> Dining </label>
+        <label for="dining"><input id="dining" name="dining" type="checkbox" value="lodging"> Transportation </label>
+        <label for="activities"><input id="activities" name="activities" type="checkbox" value="activities"> Activities </label>
+        <label for="culture"><input id="culture" name="culture" type="checkbox" value="culture"> Culture </label>
+      </fieldset>
+
+
+      <fieldset>
+        <label for="requests"> Any special requests? 
+          <textarea id="requests" name="requests" rows="3" cols="30" placeholder="Please include..."></textarea>
+        </label>
+      </fieldset>
+
+
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
