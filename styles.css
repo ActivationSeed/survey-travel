@@ -6,9 +6,6 @@ body {
   color: white;
   font-family: Calibri;
   font-size: 16px;
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
 }
 
 h1, p {
@@ -20,30 +17,26 @@ form {
   width: 60vw;
   max-width: 500px;
   min-width: 300px;
+  margin: 0 auto;
   padding-bottom: 2em;
-  background-color: #3A4D68;
-  padding: 20px;
-  border-radius: 8px;
 }
 
 fieldset {
   border: none;
-  padding: 1rem;
+  padding: 1rem 1;
 }
 
 label {
   display: block;
   margin: .5rem 0;
-  text-align: left;
 }
 
 input, textarea, select {
   margin: 2px 0 0 0;
-  width: 100%;
 }
 
 input[type="submit"] {
   display: block;
-  width: 100%;
-  margin-top: 1rem;
+  width: 50%;
+  margin-left: 1rem;
 }
